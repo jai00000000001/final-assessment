@@ -1,0 +1,130 @@
+/* Custom Bootstrap Enhancements */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0.375rem;
+}
+
+.main-content {
+  min-height: calc(100vh - 200px);
+}
+
+/* Employee Card Enhancements */
+.employee-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.employee-card .card-header {
+  border-radius: 0.75rem 0.75rem 0 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.employee-card .card-footer {
+  border-radius: 0 0 0.75rem 0.75rem !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Form Enhancements */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control-lg {
+  border-radius: 0.5rem;
+}
+
+/* Button Enhancements */
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Stats Cards */
+.card.bg-primary,
+.card.bg-success,
+.card.bg-info,
+.card.bg-warning {
+  border: none;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.card.bg-primary:hover,
+.card.bg-success:hover,
+.card.bg-info:hover,
+.card.bg-warning:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  animation: spinner-border 0.75s linear infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  .display-6 {
+    font-size: 2rem;
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
